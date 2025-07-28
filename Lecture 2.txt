@@ -1,0 +1,49 @@
+Lecture 2
+
+To enter in SQL Mode: \sql
+to connect to the server:  \connect root@localhost (enter Password after that)
+
+Then use show databases;
+
+use parth;
+-->
+create table xxps_book(
+    book_id integer primary key,
+    book_name varchar(100),
+    book_title varchar(100),
+    book_pages integer,
+    book_price integer
+);
+
+insert into xxps_book values(1, 'Java Programming', 'Learn Java', 500, 3000);
+
+INSERT INTO xxps_book VALUES(2, 'Python Basics', 'Introduction to Python', 400, 2500);
+
+insert into xxps_book values(3, 'Advance Database management Systems', 'SQL Mastery', 600, 3500);
+
+//add colume in the table
+ALTER TABLE xxps_book  add book_date date;
+
+//to create an table dublicate 
+create table gm_book25 as select * from xxps_book;
+
+// insert the  NUll values in the tables 
+insert into xxps_book(book_id, book_name, book_price) values (4, 'life of Programers', 1500);
+
+
+
+what is same in drop and truncate
+-->
+1. both delete the data
+2. both are ddl command
+3. both are autocommited
+4. both cannot get - rollback
+
+what is duel command?
+
+
+
+
+
+
+
