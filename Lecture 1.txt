@@ -1,1 +1,5 @@
-Maths Operation 
+Python Functions
+#Postitional based arguments in Python allow you to pass a variable number of arguments to a function. This is done using the `*args` syntax, where `args` is a tuple containing all the positional arguments passed to the function.
+Ex:
+    def sayhellow(*name):
+        return f"Hello, {name}!"
